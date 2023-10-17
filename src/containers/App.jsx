@@ -1,8 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence,  } from "framer-motion";
 import React from "react";
 import {
   About,
-  Alert,
   Contact,
   Header,
   Home,

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Leaf1, Leaf2 } from "../assets";
 import { ProjectsData } from "../utils/helper";
-import { FaGit, FaGitAlt, FaGithub,  } from "react-icons/fa6";
+import {  FaGithub,  } from "react-icons/fa6";
 
 const Projects = () => {
   return (
@@ -64,7 +64,7 @@ const ProjectCard = ({ project }) => {
           className="absolute inset-0 backdrop-blur-md bg-[rgba(0,0,0,0.6)] flex items-center justify-center flex-col gap-4"
         >
           <p className="text-xl text-primary">{project?.name}</p>
-          <a target="_blank" href={project.gitURL}>
+          <a target="_blank" href={project.gitURL} rel="no-referrer">
             <FaGithub className="text-3xl text-white hover:text-primary" />
           </a>
         </motion.div>
